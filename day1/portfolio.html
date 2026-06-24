@@ -1,127 +1,208 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio</title>
-    <style>
-      body {
-        font-family: Arial, sans-serif;
-        margin: 0;
-        background-color: #f4f4f4;
-      }
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
 
-      header {
-        background-color: #333;
-        color: white;
-        padding: 20px;
-      }
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #f4f4f4;
+    }
 
-      nav a {
-        color: white;
-        text-decoration: none;
-        margin-right: 10px;
-      }
+    header {
+      background-color: #333;
+      color: white;
+      padding: 20px;
+    }
 
-      main {
-        padding: 20px;
-      }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-right: 10px;
+    }
 
-      section {
-        background-color: white;
-        margin-bottom: 20px;
-        padding: 20px;
-        border: 1px solid #ddd;
-      }
+    main {
+      padding: 20px;
+    }
 
-      img {
-        width: 150px;
-        height: 150px;
-        border-radius: 50%;
-      }
+    section {
+      background-color: white;
+      margin-bottom: 20px;
+      padding: 20px;
+      border: 1px solid #ddd;
+    }
 
-      input,
-      textarea {
-        width: 100%;
-        max-width: 400px;
-        padding: 8px;
-        margin-top: 5px;
-      }
+    img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+    }
 
-      button {
-        padding: 10px 20px;
-        background-color: #333;
-        color: white;
-        border: none;
-        cursor: pointer;
-      }
+    input,
+    textarea {
+      width: 100%;
+      max-width: 400px;
+      padding: 8px;
+      margin-top: 5px;
+    }
+    textarea{
+      min-height: 120px;
+      min-width: 400px;
+    }
 
-      footer {
-        background-color: #333;
-        color: white;
-        text-align: center;
-        padding: 10px;
-      }
-    </style>
-  </head>
-  <body>
-    <header>
-      <nav>
-        <h1>My Portfolio</h1>
-        <a href="#about">About</a> | <a href="#skills">Skills</a> |
-        <a href="#education">Education</a> | <a href="#project">Projects</a> |
-        <a href="#contact">Contact</a>
-      </nav>
-    </header>
+    button {
+      padding: 10px 20px;
+      background-color: #333;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
 
-    <main>
-      <section id="about">
-        <h2>About</h2>
-        <img src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?q=80&w=880&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Profile picture" />
-        <p>Hello, I John Doe. I am learning web development.</p>
-      </section>
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 10px;
+    }
+  </style>
+</head>
 
-      <section id="skills">
-        <h2>Skills</h2>
-        <ul>
-          <li>HTML</li>
-          <li>CSS</li>
-          <li>JavaScript</li>
-        </ul>
-      </section>
+<body>
 
-      <section id="education">
-        <h2>Education</h2>
-        <p>Bachelor of Technology, XYZ</p>
-      </section>
+  <header>
+    <nav>
+      <h1>My Portfolio</h1>
+      <a href="#about">About</a> |
+      <a href="#skills">Skills</a> |
+      <a href="#education">Education</a> |
+      <a href="#project">Projects</a> |
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
 
-      <section id="project">
-        <h2>Projects</h2>
-        <ul>
-          <li>Personal Portfolio Website</li>
-          <li>Calculator App</li>
-        </ul>
-      </section>
+  <main>
 
-      <section id="contact">
-        <h2>Contact</h2>
-        <form>
-          <label for="name">Name:</label><br />
-          <input type="text" id="name" name="name" /><br /><br />
+    <section id="about">
+      <h2>About</h2>
 
-          <label for="email">Email:</label><br />
-          <input type="email" id="email" name="email" /><br /><br />
+      <img
+        src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?q=80&w=880&auto=format&fit=crop"
+        alt="Profile picture">
 
-          <label for="message">Message:</label><br />
-          <textarea id="message" name="message"></textarea><br /><br />
+      <p>Hello, I am John Doe. I am learning web development and enjoy creating websites.</p>
 
-          <button type="submit">Send</button>
-        </form>
-      </section>
-    </main>
+      <ul>
+        <li>Passionate about front-end development.</li>
+        <li>Interested in problem solving and UI design.</li>
+        <li>Currently exploring JavaScript and React.</li>
+        <li>Open to internships and collaborative projects.</li>
+      </ul>
+    </section>
 
-    <footer>
-      <p>&copy; 2026 John Doe</p>
-    </footer>
-  </body>
+    <section id="skills">
+      <h2>Skills</h2>
+
+      <ul>
+        <li>HTML5</li>
+        <li>CSS3</li>
+        <li>JavaScript</li>
+        <li>Responsive Web Design</li>
+        <li>Git and GitHub</li>
+        <li>Basic C++ Programming</li>
+        <li>Data Structures and Algorithms</li>
+      </ul>
+    </section>
+
+    <section id="education">
+      <h2>Education</h2>
+
+      <p>Bachelor of Technology, XYZ University</p>
+
+      <ul>
+        <li>2022 - 2026</li>
+        <li>Current CGPA: 8.7/10</li>
+        <li>Relevant Coursework:
+          <ul>
+            <li>Data Structures and Algorithms</li>
+            <li>Database Management Systems</li>
+            <li>Operating Systems</li>
+            <li>Computer Networks</li>
+          </ul>
+        </li>
+      </ul>
+    </section>
+
+    <section id="project">
+      <h2>Projects</h2>
+
+      <ul>
+        <li>
+          <strong>Personal Portfolio Website</strong>
+          <ul>
+            <li>Built using HTML and CSS.</li>
+            <li>Designed a responsive layout.</li>
+          </ul>
+        </li>
+
+        <li>
+          <strong>Calculator App</strong>
+          <ul>
+            <li>Implemented basic arithmetic operations.</li>
+            <li>Created using JavaScript.</li>
+          </ul>
+        </li>
+
+        <li>
+          <strong>To-Do List Application</strong>
+          <ul>
+            <li>Add and remove tasks dynamically.</li>
+            <li>Stores tasks using local storage.</li>
+          </ul>
+        </li>
+
+        <li>
+          <strong>Weather Dashboard</strong>
+          <ul>
+            <li>Displays weather information.</li>
+            <li>Uses external APIs.</li>
+          </ul>
+        </li>
+      </ul>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+
+      <ul>
+        <li>Email: johndoe@example.com</li>
+        <li>Phone: +91 98765 43210</li>
+        <li>Location: New Delhi, India</li>
+        <li>LinkedIn: linkedin.com/in/johndoe</li>
+        <li>GitHub: github.com/johndoe</li>
+      </ul>
+
+      <form>
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name"><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email"><br><br>
+
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message"></textarea><br><br>
+
+        <button type="submit">Send</button>
+      </form>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2026 John Doe. All Rights Reserved.</p>
+  </footer>
+
+</body>
 </html>
