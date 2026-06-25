@@ -1,0 +1,9 @@
+                    let                     const                   var
+
+scope               block                   block                   functional
+
+hoisting            hoisted+TDZ            hoisted+TDZ              hoisted+initialized with undefined
+
+redeclaration       no                      no                      yes
+
+reassignment        yes                     no                      yes
