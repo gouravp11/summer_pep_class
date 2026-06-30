@@ -1,0 +1,6 @@
+whenever event occurs, the event object travels through the DOM
+
+first, document to target -> event capturing
+then, target to document -> event bubbling
+
+by default, event listeners listen to event bubbling
