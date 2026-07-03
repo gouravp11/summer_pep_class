@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo</title>
+  </head>
+  <body>
+    <h1>To do List</h1>
+
+    <section id="todo-form">
+      <h2>Add todo</h2>
+      <form action="#">
+        <input
+          type="text"
+          name="title"
+          id="title"
+          placeholder="Title..."
+          required
+        />
+        <input
+          type="text"
+          name="description"
+          id="description"
+          placeholder="Description..."
+          required
+        />
+
+        <button class="btn">Add</button>
+      </form>
+    </section>
+
+    <section id="todo-list">
+      <h2>Your tasks</h2>
+
+      <div id="tasks">
+        <div class="task">
+        </div>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>
