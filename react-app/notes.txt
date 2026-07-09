@@ -1,0 +1,5 @@
+memoization hooks
+
+React.memo -> components
+useMemo -> expensive tasks
+useCallback -> functions
