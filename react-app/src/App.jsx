@@ -3,6 +3,7 @@ import Form from "./components/Form";
 import { UploadImage } from "./components/UploadImage";
 import Child from "./components/Child";
 import Child2 from "./components/Child2";
+import GrandParent from "./components/GrandParent";
 
 const App = () => {
   const [count, setCount] = useState(0);
@@ -29,9 +30,11 @@ const App = () => {
       {/* <UploadImage/> */}
       {/* <Child/> */}
       {/* <p>Result is {result}.</p> */}
-      <Child2 handleClick={handleClick} />
-      <p>Count is {count}.</p>
-      <button onClick={() => setCount(count + 1)}>Increase Count</button>
+      {/* <Child2 handleClick={handleClick} /> */}
+      {/* <p>Count is {count}.</p>
+      <button onClick={() => setCount(count + 1)}>Increase Count</button> */}
+
+      <GrandParent/>
     </div>
   );
 };
