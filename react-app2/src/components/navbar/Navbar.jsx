@@ -15,7 +15,7 @@ export default function Navbar() {
     <nav className="navbar">
       <div className="navbar-inner">
         <div className="navbar-logo">
-          <span className="navbar-logo-mark">◈</span> Northline
+          <span className="navbar-logo-mark">◈</span> LearnHub
         </div>
 
         <ul className={`navbar-links ${menuOpen ? "open" : ""}`}>

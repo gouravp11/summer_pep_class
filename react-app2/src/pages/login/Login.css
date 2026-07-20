@@ -185,6 +185,22 @@
   color: #6b7080;
 }
 
+.back-button {
+  background: none;
+  border: none;
+  color: #6c5ce7;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-bottom: 20px;
+  padding: 0;
+  align-self: flex-start;
+}
+
+.back-button:hover {
+  text-decoration: underline;
+}
+
 @media (max-width: 480px) {
   .login-card {
     padding: 32px 24px;

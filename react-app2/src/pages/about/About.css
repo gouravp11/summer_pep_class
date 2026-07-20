@@ -132,108 +132,18 @@
   font-style: italic;
 }
 
-/* Values */
-.about-values h2,
-.about-team h2 {
-  font-size: 26px;
-  font-weight: 700;
-  letter-spacing: -0.01em;
-  text-align: center;
-  margin: 0 0 40px;
-}
-
-.about-values-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
-}
-
-.about-value-card {
-  background: #fff;
-  border-radius: 12px;
-  padding: 28px 24px;
-  box-shadow: 0 1px 3px rgba(20, 15, 60, 0.06);
-}
-
-.about-value-index {
-  display: inline-block;
-  font-size: 13px;
-  font-weight: 700;
-  color: #6c5ce7;
-  margin-bottom: 14px;
-}
-
-.about-value-card h3 {
-  font-size: 17px;
-  font-weight: 700;
-  margin: 0 0 10px;
-}
-
-.about-value-card p {
-  font-size: 14px;
-  line-height: 1.65;
-  color: #6b7080;
-  margin: 0;
-}
-
-/* Team */
-.about-team-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 20px;
-}
-
-.about-team-card {
-  background: #fff;
-  border-radius: 12px;
-  padding: 28px 16px;
-  text-align: center;
-  box-shadow: 0 1px 3px rgba(20, 15, 60, 0.06);
-}
-
-.about-team-avatar {
-  width: 56px;
-  height: 56px;
-  border-radius: 50%;
-  background: #6c5ce7;
-  color: #fff;
-  font-size: 16px;
-  font-weight: 700;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0 auto 14px;
-}
-
-.about-team-name {
-  font-size: 14.5px;
-  font-weight: 700;
-}
-
-.about-team-role {
-  font-size: 12.5px;
-  color: #9295b3;
-  margin-top: 4px;
-}
-
-
-
 /* Responsive */
 @media (max-width: 900px) {
   .about-stats {
     grid-template-columns: repeat(2, 1fr);
   }
+
   .about-mission {
     grid-template-columns: 1fr;
   }
+
   .about-mission-visual {
     order: -1;
-  }
-  .about-values-grid {
-    grid-template-columns: 1fr;
-  }
-  .about-team-grid {
-    grid-template-columns: repeat(2, 1fr);
   }
 }
 
@@ -241,9 +151,11 @@
   .about-hero h1 {
     font-size: 30px;
   }
+
   .about-stats {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
   }
+
   .about-page section {
     padding: 48px 20px;
   }

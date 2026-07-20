@@ -3,24 +3,24 @@ import "./Footer.css";
 
 const columns = [
   {
-    title: "Shop",
-    links: ["New arrivals", "Best sellers", "Gift cards", "Sale"],
+    title: "Courses",
+    links: ["Web Development", "Programming", "Data Science", "Design"],
   },
   {
     title: "Company",
-    links: ["About us", "Careers", "Press", "Sustainability"],
+    links: ["About", "Contact", "Careers", "Blog"],
   },
   {
     title: "Support",
-    links: ["Help center", "Shipping & returns", "Order tracking", "Contact us"],
+    links: ["Help Center", "FAQs", "Terms", "Privacy Policy"],
   },
 ];
 
 const socialLinks = [
-  { label: "Instagram", icon: "◐" },
-  { label: "X", icon: "✕" },
-  { label: "Facebook", icon: "◑" },
+  { label: "Instagram", icon: "📷" },
+  { label: "LinkedIn", icon: "💼" },
   { label: "YouTube", icon: "▶" },
+  { label: "X", icon: "✕" },
 ];
 
 export default function Footer() {
@@ -30,11 +30,13 @@ export default function Footer() {
         <div className="footer-top">
           <div className="footer-brand">
             <div className="footer-logo">
-              <span className="footer-logo-mark">◈</span> Northline
+              <span className="footer-logo-mark">🎓</span> LearnHub
             </div>
+
             <p className="footer-tagline">
-              Thoughtfully made goods for everyday life.
+              Learn new skills with expert-led online courses.
             </p>
+
             <div className="footer-social">
               {socialLinks.map((s) => (
                 <a
@@ -65,12 +67,16 @@ export default function Footer() {
           </div>
 
           <div className="footer-newsletter">
-            <h4>Stay in the loop</h4>
-            <p>Get product updates and offers in your inbox.</p>
-            <form className="footer-newsletter-form" onSubmit={(e) => e.preventDefault()}>
+            <h4>Stay Updated</h4>
+            <p>Subscribe to receive updates about new courses.</p>
+
+            <form
+              className="footer-newsletter-form"
+              onSubmit={(e) => e.preventDefault()}
+            >
               <input
                 type="email"
-                placeholder="you@example.com"
+                placeholder="Enter your email"
                 aria-label="Email address"
               />
               <button type="submit">Subscribe</button>
@@ -79,11 +85,12 @@ export default function Footer() {
         </div>
 
         <div className="footer-bottom">
-          <p>© {new Date().getFullYear()} Northline. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} LearnHub. All rights reserved.</p>
+
           <div className="footer-bottom-links">
-            <a href="#">Privacy policy</a>
-            <a href="#">Terms of service</a>
-            <a href="#">Cookies</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+            <a href="#">Contact</a>
           </div>
         </div>
       </div>
