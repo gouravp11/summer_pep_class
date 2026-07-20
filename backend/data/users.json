@@ -1,0 +1,20 @@
+[
+  {
+    "id": "1784541486129",
+    "name": "Babu Rao",
+    "email": "baburao123@gmail.com",
+    "password": "$2b$10$FDVqjMnTczvQqMxv4IbaXe8pg8QDM43bGL3M2XZJZDXAx57lah962"
+  },
+  {
+    "id": "1784541596472",
+    "name": "Mahatama Gandhi",
+    "email": "daddy69@gmail.com",
+    "password": "$2b$10$6i/oQTwafBCCekDpApeNvOJbh.X0K/p9i6b5LeU5uxAVT91/dyUA6"
+  },
+  {
+    "id": "1784541629425",
+    "name": "Godse",
+    "email": "godse123@gmail.com",
+    "password": "$2b$10$.EuVdZA5u2skrgubRMVPKuykDV2qOK1Tanf2kucJTfTs0zSYXxJ5q"
+  }
+]
