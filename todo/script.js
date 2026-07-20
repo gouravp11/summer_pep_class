@@ -8,6 +8,10 @@ const getTaskHTML = (t) => {
   task.className = "task";
   task.id = "task-" + t.id;
 
+  if (t.isComplete) {
+    task.classList.add("completed");
+  }
+
   const title = document.createElement("h3");
   title.textContent = t.title;
 
@@ -20,12 +24,13 @@ const getTaskHTML = (t) => {
 
   const doneBtn = document.createElement("button");
   doneBtn.className = "btn";
-  doneBtn.textContent = "Mark Done";
+  doneBtn.textContent = t.isComplete ? "Undo" : "Mark Done";
 
   task.append(title, description, deleteBtn, doneBtn);
 
   return { task, deleteBtn, doneBtn };
 };
+
 const tasksList = document.getElementById("tasks");
 
 const showAllTodo = () => {
@@ -54,6 +59,21 @@ const showAllTodo = () => {
       localStorage.setItem("allTasks", JSON.stringify(updatedTasks));
       taskHTML.task.remove();
     });
+
+    // Mark Done
+    taskHTML.doneBtn.addEventListener("click", () => {
+      const allTasks = JSON.parse(localStorage.getItem("allTasks"));
+      const currentTask = allTasks.find((t) => t.id == task.id);
+
+      currentTask.isComplete = !currentTask.isComplete;
+
+      localStorage.setItem("allTasks", JSON.stringify(allTasks));
+
+      taskHTML.task.classList.toggle("completed");
+      taskHTML.doneBtn.textContent = currentTask.isComplete
+        ? "Undo"
+        : "Mark Done";
+    });
   });
 };
 
@@ -81,6 +101,7 @@ const addTodo = (e) => {
 
   const taskHTML = getTaskHTML(task);
   tasksList.appendChild(taskHTML.task);
+
   taskHTML.deleteBtn.addEventListener("click", () => {
     console.log("delete clicked");
     const updatedTasks = JSON.parse(localStorage.getItem("allTasks")).filter(
@@ -90,6 +111,20 @@ const addTodo = (e) => {
     taskHTML.task.remove();
   });
 
+  // Mark Done
+  taskHTML.doneBtn.addEventListener("click", () => {
+    const allTasks = JSON.parse(localStorage.getItem("allTasks"));
+    const currentTask = allTasks.find((t) => t.id == task.id);
+
+    currentTask.isComplete = !currentTask.isComplete;
+
+    localStorage.setItem("allTasks", JSON.stringify(allTasks));
+
+    taskHTML.task.classList.toggle("completed");
+    taskHTML.doneBtn.textContent = currentTask.isComplete
+      ? "Undo"
+      : "Mark Done";
+  });
 
   toDoForm.elements[0].value = "";
   toDoForm.elements[1].value = "";
